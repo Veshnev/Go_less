@@ -7,15 +7,15 @@ import (
 
 // 1  Подается число N;  Нужно вывести сумму арифметической прогресии числа N; Скорость O(1)
 func main() {
-	var N uint64
+	var n uint64
 
 	fmt.Print("Введите число для расчёта арифметической прогрессии: ")
-	fmt.Scan(&N)
+	fmt.Scan(&n)
 
-	if N == 0 {
+	if n == 0 {
 		fmt.Println("Zero и в африке — Zero...")
 		os.Exit(0)
 	}
 
-	fmt.Println("Результат: ", (1+N)/2*N+(1+N)%2*N/2)
+	fmt.Println("Результат —", (1+n)/2*n+(1+n)%2*n/2)
 }
