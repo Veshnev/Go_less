@@ -9,7 +9,7 @@ func main() {
 	fmt.Scan(&a)
 
 	hours := a / 60 / 60
-	minutes := (a - hours * 3600) / 60
+	minutes := (a - hours*3600) / 60
 	seconds := a % 60
 
 	fmt.Println("Часов: ", hours)
